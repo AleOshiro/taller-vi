@@ -8,21 +8,21 @@ namespace TP2___EJ2
 {
     class Auto
     {
-        public Rueda[] ruedas { get; set; }
-        public Motor motor { get; set; }
-        public CajaDeCambio cajacambios { get; set; }
+        public Rueda[] rueda = new Rueda[5];
+        public Motor motor;
+        public CajaDeCambio cajaDeCambio;
 
-        public Auto (Rueda[] ruedas, Motor motor, CajaDeCambio cajaDeCambios)
+        public Auto(Motor motor, CajaDeCambio cajaDeCambio, Rueda[] rueda)
         {
-            if (this.ruedas.Length > 5)
+            if (rueda.Length > 5)
             {
-                Console.WriteLine("Solo se pueden tener 5 ruedas");
-                return;
+                Console.WriteLine("Solo puede contener hasta 5 ruedas");
             }
 
-            this.ruedas = ruedas;
+            this.rueda = rueda;
             this.motor = motor;
-            this.cajacambios = cajacambios;
+            this.cajaDeCambio = cajaDeCambio;
+
         }
     }
 }

@@ -8,7 +8,7 @@ namespace TP2___EJ2
 {
     interface MotorInterface
     {
-        double diametro { get; set; }
+        string nombre { get; set; }
 
         void Iniciar();
 

@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace TP2___EJ2
 {
-    interface RuedaInterface
+    interface CajaDeCambioInterface
     {
-        double diametro { get; set; }
+        string tipo { get; set; }
 
-        void Iniciar();
+        int cantidadCambios { get; set; }
 
-        void Frenar();
     }
 }

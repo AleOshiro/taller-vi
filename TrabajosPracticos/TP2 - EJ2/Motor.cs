@@ -6,7 +6,23 @@ using System.Threading.Tasks;
 
 namespace TP2___EJ2
 {
-    class Motor
+    class Motor : MotorInterface
     {
+        public string nombre { set; get; }
+
+        public Motor(string nombre)
+        {
+            this.nombre = nombre;
+        }
+
+        public void Frenar()
+        {
+            Console.WriteLine("Frenando F");
+        }
+
+        public void Iniciar()
+        {
+            Console.WriteLine("Iniciando M");
+        } 
     }
 }
